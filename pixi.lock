@@ -203,6 +203,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libpng-1.6.47-h943b412_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libpq-17.4-h27ae623_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libprotobuf-5.28.3-h6128344_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/libpysal-4.12.1-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libre2-11-2024.07.02-hbbce691_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/librttopo-1.1.0-h97f6797_17.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libsodium-1.0.20-h4ab18f5_0.conda
@@ -3136,6 +3137,25 @@ packages:
   purls: []
   size: 2960815
   timestamp: 1735577210663
+- conda: https://conda.anaconda.org/conda-forge/noarch/libpysal-4.12.1-pyhd8ed1ab_1.conda
+  sha256: e0af942b38a879a2d6465bdda2c340b92bdfa5357753b35eba3641f1258e71dd
+  md5: 83addf33a22c0e8b34f10983c3c0ced6
+  depends:
+  - beautifulsoup4 >=4.10
+  - geopandas >=0.10.0
+  - numpy >=1.22
+  - packaging >=22
+  - pandas >=1.4
+  - platformdirs >=2.0.2
+  - python >=3.10
+  - requests >=2.27
+  - scikit-learn >=1.1
+  - scipy >=1.8
+  - shapely >=2.0.1
+  license: BSD-3-Clause
+  license_family: BSD
+  size: 2210625
+  timestamp: 1734433819088
 - conda: https://conda.anaconda.org/conda-forge/linux-64/libre2-11-2024.07.02-hbbce691_2.conda
   sha256: 4420f8362c71251892ba1eeb957c5e445e4e1596c0c651c28d0d8b415fe120c7
   md5: b2fede24428726dd867611664fb372e8
