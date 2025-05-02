@@ -1,5 +1,6 @@
 import geopandas as gpd
 import pandas as pd
+from scipy.spatial import distance
 
 def get_buildings(path_to_buildings):
     buildings = gpd.read_parquet(path_to_buildings)
