@@ -6,7 +6,7 @@ def get_buildings(path_to_buildings):
     buildings = gpd.read_parquet(path_to_buildings)
     
     final_clusters = pd.read_parquet(
-        "/data/uscuni-ulce/processed_data/clusters/cluster_mapping_v8.pq")
+        "/data/uscuni-ulce/processed_data/clusters/cluster_mapping_v10.pq")
     
     level_columns = []
     
