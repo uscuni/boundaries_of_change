@@ -1,9 +1,9 @@
 [project]
 authors = [{name = "Martin Fleischmann", email = "martin@martinfleischmann.net"}]
-dependencies = []
 name = "boundaries_of_change"
 requires-python = ">= 3.11"
 version = "0.1.0"
+dependencies = ["spopt @ https://github.com/pysal/spopt.git"]
 
 [build-system]
 build-backend = "hatchling.build"
@@ -37,6 +37,6 @@ libpysal = ">=4.12.1,<5"
 tobler = ">=0.12.1,<0.13"
 h3 = ">=4.2.0,<5"
 h3-py = ">=4.2.2,<5"
-spopt = ">=0.6.1,<0.7"
 clustergram = ">=0.8.1,<0.9"
 bokeh = ">=3.7.2,<4"
+fast_hdbscan = ">=0.2.2,<0.3"
