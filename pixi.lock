@@ -412,7 +412,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/59/9a/a244eded46beaad15b06b81e8889a561e3c869b57311870188f0d793a1c8/pointpats-2.5.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/f5/78/54928786de173be3210963d198e4a7d037f9bf5dd327430090bf6c52e152/pulp-3.1.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/29/04/8f6b281e28cc090f368f5eee126d8fd72f60ed9a318893a54989918b048b/spaghetti-1.7.6-py3-none-any.whl
-      - pypi: git+https://github.com/pysal/spopt.git@da4e131df05723359948f1579bbc815b37935f37
+      - pypi: git+https://github.com/pysal/spopt.git#da4e131df05723359948f1579bbc815b37935f37
 packages:
 - conda: https://conda.anaconda.org/conda-forge/linux-64/_libgcc_mutex-0.1-conda_forge.tar.bz2
   sha256: fe51de6107f9edc7aa4f786a70f4a883943bc9d39b3bb7307c04c41410990726
@@ -5387,7 +5387,7 @@ packages:
   - twine ; extra == 'tests'
   - wheel ; extra == 'tests'
   requires_python: '>=3.10'
-- pypi: git+https://github.com/pysal/spopt.git@da4e131df05723359948f1579bbc815b37935f37
+- pypi: git+https://github.com/pysal/spopt.git#da4e131df05723359948f1579bbc815b37935f37
   name: spopt
   version: 0.6.2.dev13+gda4e131
   requires_dist:
@@ -5404,6 +5404,11 @@ packages:
   - spaghetti>=1.6.4
   - tqdm>=4.63.0
   - pointpats>=2.3.0
+  - codecov ; extra == 'tests'
+  - coverage ; extra == 'tests'
+  - pytest ; extra == 'tests'
+  - pytest-cov ; extra == 'tests'
+  - pytest-xdist ; extra == 'tests'
   - pre-commit ; extra == 'dev'
   - ruff ; extra == 'dev'
   - nbsphinx ; extra == 'docs'
@@ -5421,11 +5426,6 @@ packages:
   - routingpy ; extra == 'notebooks'
   - seaborn ; extra == 'notebooks'
   - watermark ; extra == 'notebooks'
-  - codecov ; extra == 'tests'
-  - coverage ; extra == 'tests'
-  - pytest ; extra == 'tests'
-  - pytest-cov ; extra == 'tests'
-  - pytest-xdist ; extra == 'tests'
   requires_python: '>=3.11'
 - conda: https://conda.anaconda.org/conda-forge/linux-64/sqlite-3.49.1-h9eae976_1.conda
   sha256: e4535c13b082b6126330b4b8f323d308e24f454e4f218a2a6c6135fb10050b1c
