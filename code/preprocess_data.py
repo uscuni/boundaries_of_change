@@ -36,3 +36,10 @@ def normalize_building_counts(count_table):
     region_building_sums = count_table.sum(axis=0)
     cnt_table_norm = count_table.div(region_building_sums, axis=1)
     return cnt_table_norm.T
+
+def compute_bc_matrix(count_table):
+    """Computes Bray-Curtis dissimilarity matrix from input table."""
+    bray_curtis_dist = distance.pdist(count_table, metric='braycurtis')
+    bray_curtis_matrix = distance.squareform(bray_curtis_dist)
+    bray_curtis_df = pd.DataFrame(bray_curtis_matrix, index=count_table.T.columns, columns=count_table.T.columns)
+    return bray_curtis_df
