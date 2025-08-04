@@ -23,7 +23,7 @@ def get_buildings(path_to_buildings):
     level_columns.append("level_7")
     return buildings, level_columns
 
-def get_building_counts_per_region(buildings, boundary, level="level_4"):
+def get_building_counts_per_region(buildings, boundary, level="level_7"):
     """Returns count table of buildings per region in a specified layer."""
     joined = gpd.sjoin(buildings, boundary, how="left", predicate="within")
     grouped = joined.groupby("NAME")[level].value_counts()
